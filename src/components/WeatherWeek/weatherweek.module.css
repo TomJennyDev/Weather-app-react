@@ -25,16 +25,27 @@
 }
 
 .dayofweek {
+  height: 10%;
   color: white;
 }
 .img {
   height: 50%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 .temperature i {
   margin-right: 5px;
+}
+.temperature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
 }
 
 .description {

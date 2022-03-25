@@ -17,11 +17,15 @@ const WeatherItem = ({ item, units, length }) => {
           alt={weatherInfo?.name}
         />
       </div>
-      <p className={Styles.description}>{weather && weather[0].description}</p>
       <div className={Styles.temperature}>
-        <i className="fa-solid fa-temperature-three-quarters"></i>
-        {main?.temp_min}/ {main?.temp_max} <sup>o</sup>
-        <span>{units === "metric" ? "C" : "F"}</span>
+        <p className={Styles.description}>
+          {weather && weather[0].description}
+        </p>
+        <div>
+          <i className="fa-solid fa-temperature-three-quarters"></i>
+          {main?.temp_min}/ {main?.temp_max} <sup>o</sup>
+          <span>{units === "metric" ? "C" : "F"}</span>
+        </div>
       </div>
     </div>
   );

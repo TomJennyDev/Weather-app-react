@@ -6,8 +6,9 @@ import { setErrorMessage } from "./store/reducer/actions";
 
 function ToastComponent({ children }) {
   const [state, dispatch] = useContext(StoreContext);
-  const notify = () => toast(state.errorMessage);
   useEffect(() => {
+    const notify = () => toast(state.errorMessage);
+
     if (state?.errorMessage) {
       notify();
       dispatch(setErrorMessage(""));
