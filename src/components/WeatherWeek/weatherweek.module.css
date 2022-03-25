@@ -25,7 +25,7 @@
 }
 
 .dayofweek {
-  height: 10%;
+  height: 20%;
   color: white;
 }
 .img {
@@ -45,7 +45,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40%;
+  height: 30%;
 }
 
 .description {
